@@ -19,6 +19,7 @@ npm run dev -- --port 5174
 
 ## 高清素材
 
-详情页采用原尺寸无损 PNG，只在浏览器中缩放。最新原版 PDF 因超过 GitHub 单文件限制按字节分成两个文件，`original-pdf.html` 在浏览器还原，并校验 SHA-256。分块不会更改 PDF 内容或清晰度。
+详情页采用原尺寸无损 PNG，只在浏览器中缩放。最新原版 PDF 因超过 GitHub 单文件限制按字节分成多个文件，`original-pdf.html` 在浏览器还原，并校验 SHA-256。分块不会更改 PDF 内容或清晰度。
 
 旧素材、临时文件、node_modules、dist 不纳入仓库。
+
