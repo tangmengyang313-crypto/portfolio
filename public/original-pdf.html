@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>原版作品集 PDF | Avery</title><style>*{box-sizing:border-box}body{margin:0;background:#0c0c0c;color:#d7e2ea;font:14px system-ui}header{height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:20px}a{color:inherit}#status{padding:40px 24px;text-align:center}iframe{display:block;width:100%;height:calc(100dvh - 58px);border:0}button{color:inherit;background:transparent;border:1px solid #777;border-radius:30px;padding:7px 16px;cursor:pointer}</style></head><body><header><span>AVERY / 原版作品集 PDF</span><a id="download" hidden download="工作作品集.pdf">下载原版 PDF</a></header><div id="status" role="status">正在加载原版高清 PDF…</div><iframe id="viewer" title="原版高清作品集" hidden></iframe><script type="module">
+const status=document.querySelector('#status');
+let blobUrl;
+try{
+ const manifestResponse=await fetch('./assets/original-pdf/manifest.json');
+ if(!manifestResponse.ok)throw new Error('manifest');
+ const manifest=await manifestResponse.json();
+ const chunks=[];
+ let loaded=0;
+ for(const part of manifest.parts){
+  const response=await fetch(`./assets/original-pdf/${part}`);
+  if(!response.ok)throw new Error('download');
+  const reader=response.body.getReader();
+  while(true){const {done,value}=await reader.read();if(done)break;chunks.push(value);loaded+=value.byteLength;status.textContent=`正在加载原版高清 PDF… ${Math.floor(loaded/manifest.bytes*100)}%`;}
+ }
+ const blob=new Blob(chunks,{type:'application/pdf'});
+ if(blob.size!==manifest.bytes)throw new Error('size');
+ const digest=await crypto.subtle.digest('SHA-256',await blob.arrayBuffer());
+ const hash=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('');
+ if(hash!==manifest.sha256)throw new Error('integrity');
+ blobUrl=URL.createObjectURL(blob);
+ const download=document.querySelector('#download');download.href=blobUrl;download.hidden=false;
+ const page=Math.max(1,Math.min(4,Number(new URLSearchParams(location.hash.slice(1)).get('page'))||1));
+ const viewer=document.querySelector('#viewer');viewer.src=`${blobUrl}#page=${page}`;viewer.hidden=false;status.hidden=true;
+}catch(error){status.textContent='PDF 加载未完成，请刷新页面重试。';}
+window.addEventListener('pagehide',()=>{if(blobUrl)URL.revokeObjectURL(blobUrl)});
+</script></body></html>
