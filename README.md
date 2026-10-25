@@ -23,3 +23,10 @@ npm run dev -- --port 5174
 
 旧素材、临时文件、node_modules、dist 不纳入仓库。
 
+## 仓库初始化记录
+
+保留远程原始 README 内容：
+
+```markdown
+# Avery portfolio
+```
