@@ -8,112 +8,112 @@ export const caseStudies: Record<CaseStudyId, CaseStudy> = {
     "pdfPage": 2,
     "pages": [
       {
-        "src": "/assets/case-studies-latest/foilsense/01.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/01.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/02.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/02.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/03.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/03.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/04.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/04.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/05.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/05.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/06.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/06.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/07.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/07.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/08.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/08.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/09.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/09.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/10.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/10.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/11.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/11.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/12.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/12.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/13.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/13.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/14.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/14.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/15.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/15.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/16.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/16.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/17.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/17.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/18.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/18.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/19.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/19.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/20.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/20.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/21.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/21.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/foilsense/22.png",
+        "src": "/assets/case-studies-webp/v1/foilsense/22.webp",
         "width": 1920,
         "height": 1427
       }
@@ -126,97 +126,97 @@ export const caseStudies: Record<CaseStudyId, CaseStudy> = {
     "pdfPage": 1,
     "pages": [
       {
-        "src": "/assets/case-studies-latest/leke/01.png",
+        "src": "/assets/case-studies-webp/v1/leke/01.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/02.png",
+        "src": "/assets/case-studies-webp/v1/leke/02.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/03.png",
+        "src": "/assets/case-studies-webp/v1/leke/03.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/04.png",
+        "src": "/assets/case-studies-webp/v1/leke/04.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/05.png",
+        "src": "/assets/case-studies-webp/v1/leke/05.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/06.png",
+        "src": "/assets/case-studies-webp/v1/leke/06.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/07.png",
+        "src": "/assets/case-studies-webp/v1/leke/07.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/08.png",
+        "src": "/assets/case-studies-webp/v1/leke/08.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/09.png",
+        "src": "/assets/case-studies-webp/v1/leke/09.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/10.png",
+        "src": "/assets/case-studies-webp/v1/leke/10.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/11.png",
+        "src": "/assets/case-studies-webp/v1/leke/11.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/12.png",
+        "src": "/assets/case-studies-webp/v1/leke/12.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/13.png",
+        "src": "/assets/case-studies-webp/v1/leke/13.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/14.png",
+        "src": "/assets/case-studies-webp/v1/leke/14.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/15.png",
+        "src": "/assets/case-studies-webp/v1/leke/15.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/16.png",
+        "src": "/assets/case-studies-webp/v1/leke/16.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/17.png",
+        "src": "/assets/case-studies-webp/v1/leke/17.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/18.png",
+        "src": "/assets/case-studies-webp/v1/leke/18.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/leke/19.png",
+        "src": "/assets/case-studies-webp/v1/leke/19.webp",
         "width": 1920,
         "height": 1469
       }
@@ -229,112 +229,112 @@ export const caseStudies: Record<CaseStudyId, CaseStudy> = {
     "pdfPage": 3,
     "pages": [
       {
-        "src": "/assets/case-studies-latest/commerce/01.png",
+        "src": "/assets/case-studies-webp/v1/commerce/01.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/02.png",
+        "src": "/assets/case-studies-webp/v1/commerce/02.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/03.png",
+        "src": "/assets/case-studies-webp/v1/commerce/03.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/04.png",
+        "src": "/assets/case-studies-webp/v1/commerce/04.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/05.png",
+        "src": "/assets/case-studies-webp/v1/commerce/05.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/06.png",
+        "src": "/assets/case-studies-webp/v1/commerce/06.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/07.png",
+        "src": "/assets/case-studies-webp/v1/commerce/07.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/08.png",
+        "src": "/assets/case-studies-webp/v1/commerce/08.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/09.png",
+        "src": "/assets/case-studies-webp/v1/commerce/09.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/10.png",
+        "src": "/assets/case-studies-webp/v1/commerce/10.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/11.png",
+        "src": "/assets/case-studies-webp/v1/commerce/11.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/12.png",
+        "src": "/assets/case-studies-webp/v1/commerce/12.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/13.png",
+        "src": "/assets/case-studies-webp/v1/commerce/13.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/14.png",
+        "src": "/assets/case-studies-webp/v1/commerce/14.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/15.png",
+        "src": "/assets/case-studies-webp/v1/commerce/15.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/16.png",
+        "src": "/assets/case-studies-webp/v1/commerce/16.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/17.png",
+        "src": "/assets/case-studies-webp/v1/commerce/17.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/18.png",
+        "src": "/assets/case-studies-webp/v1/commerce/18.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/19.png",
+        "src": "/assets/case-studies-webp/v1/commerce/19.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/20.png",
+        "src": "/assets/case-studies-webp/v1/commerce/20.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/21.png",
+        "src": "/assets/case-studies-webp/v1/commerce/21.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/commerce/22.png",
+        "src": "/assets/case-studies-webp/v1/commerce/22.webp",
         "width": 1920,
         "height": 512
       }
@@ -347,47 +347,47 @@ export const caseStudies: Record<CaseStudyId, CaseStudy> = {
     "pdfPage": 4,
     "pages": [
       {
-        "src": "/assets/case-studies-latest/campaign/01.png",
+        "src": "/assets/case-studies-webp/v1/campaign/01.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/campaign/02.png",
+        "src": "/assets/case-studies-webp/v1/campaign/02.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/campaign/03.png",
+        "src": "/assets/case-studies-webp/v1/campaign/03.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/campaign/04.png",
+        "src": "/assets/case-studies-webp/v1/campaign/04.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/campaign/05.png",
+        "src": "/assets/case-studies-webp/v1/campaign/05.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/campaign/06.png",
+        "src": "/assets/case-studies-webp/v1/campaign/06.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/campaign/07.png",
+        "src": "/assets/case-studies-webp/v1/campaign/07.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/campaign/08.png",
+        "src": "/assets/case-studies-webp/v1/campaign/08.webp",
         "width": 1920,
         "height": 1800
       },
       {
-        "src": "/assets/case-studies-latest/campaign/09.png",
+        "src": "/assets/case-studies-webp/v1/campaign/09.webp",
         "width": 1920,
         "height": 1150
       }

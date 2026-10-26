@@ -7,6 +7,7 @@ import '@fontsource/kanit/latin-400.css';
 import '@fontsource/kanit/latin-500.css';
 import '@fontsource/kanit/latin-900.css';
 import './styles.css';
+import { DeferredImage } from './DeferredImage';
 import { caseStudies, type CaseStudyId } from './caseStudies';
 
 const publicUrl = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
@@ -48,7 +49,7 @@ function Portrait() {
     return () => { window.removeEventListener('mousemove', move);document.removeEventListener('mouseleave', reset); };
   }, [reduced]);
   return <div className="portrait-position"><Fade delay={.6}><div ref={ref} className="portrait-magnet">
-    <img className="portrait-image" src={publicUrl("assets/avery-portrait-green.png")} alt="Avery 首页人物肖像" width="1254" height="1254" decoding="async" loading="eager" draggable={false}/>
+    <img className="portrait-image" src={publicUrl("assets/avery-portrait-green.webp")} {...{ fetchpriority: 'high' }} alt="Avery 首页人物肖像" width="1254" height="1254" decoding="async" loading="eager" draggable={false}/>
   </div></Fade></div>;
 }
 function Hero() {
@@ -63,7 +64,7 @@ function Hero() {
 function PhotoRow({ ids, direction, progress }: { ids: number[]; direction: number; progress: MotionValue<number> }) {
   const x = useTransform(progress, value => direction === 1 ? -900 + value * 620 : -300 - value * 620);
   return <motion.div className="photo-track" style={{ x }}>
-    {[0, 1, 2].map(copy => <div className="photo-group" key={copy} aria-hidden={copy > 0 ? true : undefined}>{ids.map((id, i) => <figure className="photo-tile" key={id}><img src={id === 8 ? publicUrl("assets/photo-8-latest.jpg") : asset(`photo-${id}`)} style={id === 8 ? { objectPosition: "center 32%" } : undefined} width="840" height="540" loading="lazy" decoding="async" alt={copy > 0 ? '' : `生活影像 ${i + 1}`} /></figure>)}</div>)}
+    {[0, 1, 2].map(copy => <div className="photo-group" key={copy} aria-hidden={copy > 0 ? true : undefined}>{ids.map((id, i) => <figure className="photo-tile" key={id}><DeferredImage src={id === 8 ? publicUrl("assets/photo-8-latest.jpg") : asset(`photo-${id}`)} style={id === 8 ? { objectPosition: "center 32%" } : undefined} width="840" height="540" decoding="async" alt={copy > 0 ? '' : `生活影像 ${i + 1}`} /></figure>)}</div>)}
   </motion.div>;
 }
 function Marquee() {
@@ -81,10 +82,10 @@ function About() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start .8', 'end .2'] });
   const text = '我是唐梦阳，专注于产品体验与视觉设计。我关注使用者的真实需求，也在意每一个视觉细节。从界面交互到商业表达，我希望用清晰的设计思考，让信息更易理解，让体验更有温度。一起，把想法变成看得见、用得好的设计。';
   return <section id="about" className="about">
-    <img className="decoration d1" src={asset('about-element-3')} alt="" aria-hidden="true" width="600" height="517" loading="lazy" decoding="async"/>
-    <img className="decoration d2" src={asset('about-element-4')} alt="" aria-hidden="true" width="600" height="548" loading="lazy" decoding="async"/>
-    <img className="decoration d3" src={asset('about-element-2')} alt="" aria-hidden="true" width="600" height="555" loading="lazy" decoding="async"/>
-    <img className="decoration d4" src={asset('about-element-1')} alt="" aria-hidden="true" width="600" height="522" loading="lazy" decoding="async"/>
+    <DeferredImage className="decoration d1" src={asset('about-element-3')} alt="" aria-hidden="true" width="600" height="517" decoding="async"/>
+    <DeferredImage className="decoration d2" src={asset('about-element-4')} alt="" aria-hidden="true" width="600" height="548" decoding="async"/>
+    <DeferredImage className="decoration d3" src={asset('about-element-2')} alt="" aria-hidden="true" width="600" height="555" decoding="async"/>
+    <DeferredImage className="decoration d4" src={asset('about-element-1')} alt="" aria-hidden="true" width="600" height="522" decoding="async"/>
     <Fade><span className="eyebrow">01 / 关于我</span><h2 className="section-heading gradient">ABOUT ME</h2></Fade>
     <Fade className="about-tags"><ul className="about-skills" aria-label="设计与技术能力">{['体验设计', '视觉设计', 'AIGC', 'AI coding'].map(skill => <li className="skill-pill" key={skill}>{skill}</li>)}</ul></Fade>
     <p className="about-text" ref={ref} aria-label={text}><span aria-hidden="true">{Array.from(text).map((char, i) => reduced ? <span key={i}>{char}</span> : <Character key={i} char={char} index={i} total={text.length} progress={scrollYProgress}/>)}</span></p>
@@ -105,7 +106,7 @@ function ProjectCard({ project, index, progress, onOpen }: { project: typeof pro
   const scale = useTransform(progress, [index / 3, 1], [1, 1 - (2 - index) * .03]);
   return <div className="project-slot" style={{ top: `calc(var(--sticky-top) + ${index * 28}px)`, zIndex: index + 1 }}><motion.article className="project-card" style={{ scale: reduced ? 1 : scale }}>
     <div className="project-header"><span className="project-number">0{index + 1}</span><div className="project-title"><span>{project.english}</span><h3>{project.name}</h3><p>{project.tags}</p></div><button className="ghost-button" onClick={() => onOpen(index)}>浏览作品 <ArrowUpRight size={19}/></button></div>
-    <div className="project-grid"><div className="project-left">{project.images.slice(0, 2).map((id, i) => <button className={`project-image image-${i}`} key={id} onClick={() => onOpen(index)} aria-label={`查看${project.name}原图 ${i + 1}`}><img src={asset(`project-latest-${id}`)} alt={`${project.name} · 上传作品 ${i + 1}`} loading="lazy" decoding="async"/></button>)}</div><button className="project-image project-main" onClick={() => onOpen(index)} aria-label={`查看${project.name}原图 3`}><img src={asset(`project-latest-${project.images[2]}`)} alt={`${project.name} · 上传作品 3`} loading="lazy" decoding="async"/></button></div>
+    <div className="project-grid"><div className="project-left">{project.images.slice(0, 2).map((id, i) => <button className={`project-image image-${i}`} key={id} onClick={() => onOpen(index)} aria-label={`查看${project.name}原图 ${i + 1}`}><DeferredImage src={asset(`project-latest-${id}`)} alt={`${project.name} · 上传作品 ${i + 1}`} decoding="async"/></button>)}</div><button className="project-image project-main" onClick={() => onOpen(index)} aria-label={`查看${project.name}原图 3`}><DeferredImage src={asset(`project-latest-${project.images[2]}`)} alt={`${project.name} · 上传作品 3`} decoding="async"/></button></div>
     <div className="project-caption"><span>{project.caption}</span><span>AVERY / SELECTED WORK</span></div>
   </motion.article></div>;
 }
@@ -123,7 +124,7 @@ function ProjectDetail({ id }: { id: CaseStudyId }) {
       <div className="case-toolbar"><span>{study.subtitle}</span><div className="case-reading-actions"><a href={`${publicUrl("original-pdf.html")}#page=${study.pdfPage}`} target="_blank" rel="noopener noreferrer">查看原版 PDF <ArrowUpRight size={14}/></a><button onClick={() => setZoomed(!zoomed)} aria-pressed={zoomed}>{zoomed ? <ZoomOut size={17}/> : <ZoomIn size={17}/>} {zoomed ? '适应屏幕' : '放大阅读'}</button></div></div>
     </section>
     <section className={`case-reader project-detail-container ${zoomed ? 'is-zoomed' : ''}`} aria-label={`${study.title}设计详情`}><div className="case-pages">
-      {study.pages.map((page, i) => <img key={page.src} src={publicUrl(page.src)} width={page.width} height={page.height} alt={`${study.title} · 设计过程与作品展示 ${i + 1}`} loading={i === 0 ? 'eager' : 'lazy'} decoding="async"/>)}
+      {study.pages.map((page, i) => <DeferredImage priority={i === 0} key={page.src} src={publicUrl(page.src)} width={page.width} height={page.height} alt={`${study.title} · 设计过程与作品展示 ${i + 1}`} decoding="async"/>)}
     </div></section>
     <footer className="case-footer project-detail-container"><a href="#projects"><ArrowLeft size={17}/>返回作品</a><a href={`#project/${next}`}>下一个项目 · {caseStudies[next].title}<ArrowUpRight size={18}/></a></footer>
   </main>;
