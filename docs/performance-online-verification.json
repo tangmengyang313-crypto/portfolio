@@ -1,0 +1,121 @@
+{
+  "baseUrl": "https://tangmengyang313-crypto.github.io/portfolio/",
+  "commit": "ecf95d63a0fd9e76fd08d61e93f3bef24a513d32",
+  "checks": [
+    {
+      "path": "assets/index-BkNGS1JO.js",
+      "status": 200,
+      "bytes": 301806,
+      "contentType": "application/javascript; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "sha256": "080393ba65754d45390014e348516e6d487e6cce40f174ad3f67b0569406dc1c",
+      "matchesBuild": true,
+      "comparison": "exact bytes",
+      "milliseconds": 1096.1
+    },
+    {
+      "path": "assets/avery-portrait-green.webp",
+      "status": 200,
+      "bytes": 1403050,
+      "contentType": "image/webp",
+      "cacheControl": "max-age=600",
+      "sha256": "33d047f5c8805e46e8f6b4842f831d1de40ec07b76c972c1bd94a750bc1f382d",
+      "matchesBuild": true,
+      "comparison": "exact bytes",
+      "milliseconds": 1245.5
+    },
+    {
+      "path": "assets/case-studies-webp/v1/foilsense/01.webp",
+      "status": 200,
+      "bytes": 155316,
+      "contentType": "image/webp",
+      "cacheControl": "max-age=600",
+      "sha256": "8493033ab5761dd6153d9565afcfc0080e6f58fa76222d7caf62dd06bff2ad64",
+      "matchesBuild": true,
+      "comparison": "exact bytes",
+      "milliseconds": 921.5
+    },
+    {
+      "path": "assets/case-studies-webp/v1/leke/01.webp",
+      "status": 200,
+      "bytes": 232846,
+      "contentType": "image/webp",
+      "cacheControl": "max-age=600",
+      "sha256": "8bca6adffac7dd72ba7978deb5ee663ea7a4e6a16f5d42e64ce3222f6b348eae",
+      "matchesBuild": true,
+      "comparison": "exact bytes",
+      "milliseconds": 858.5
+    },
+    {
+      "path": "assets/case-studies-webp/v1/commerce/01.webp",
+      "status": 200,
+      "bytes": 98522,
+      "contentType": "image/webp",
+      "cacheControl": "max-age=600",
+      "sha256": "b825b06db09fb6abcff36a4e51d1908213b8c85fd822229c3a35f9410293fdd8",
+      "matchesBuild": true,
+      "comparison": "exact bytes",
+      "milliseconds": 486.4
+    },
+    {
+      "path": "assets/case-studies-webp/v1/campaign/01.webp",
+      "status": 200,
+      "bytes": 250198,
+      "contentType": "image/webp",
+      "cacheControl": "max-age=600",
+      "sha256": "2a96413a2f4afd3670c51254972c1698831ee46ad78fd951ca4aa22b9dd8c13e",
+      "matchesBuild": true,
+      "comparison": "exact bytes",
+      "milliseconds": 608.7
+    },
+    {
+      "path": "assets/case-studies-webp/v1/campaign/09.webp",
+      "status": 200,
+      "bytes": 569024,
+      "contentType": "image/webp",
+      "cacheControl": "max-age=600",
+      "sha256": "e22d7ef3f4dc2424a034c8331ba9ac403e1e587da5553996b395992d70f9a91a",
+      "matchesBuild": true,
+      "comparison": "exact bytes",
+      "milliseconds": 1493.9
+    },
+    {
+      "path": "original-pdf.html",
+      "status": 200,
+      "bytes": 2495,
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "sha256": "bd4892505714374afff81caa30f0985e3ae4bfc90f79cf8a149c69497bdb9345",
+      "matchesBuild": true,
+      "comparison": "normalized text",
+      "milliseconds": 1435.2
+    },
+    {
+      "path": "assets/original-pdf/manifest.json",
+      "status": 200,
+      "bytes": 333,
+      "contentType": "application/json; charset=utf-8",
+      "cacheControl": "max-age=600",
+      "sha256": "b9130956227f106ac3a97271dbf7971c80ab18a2d7dc27a321d5ed614e69af79",
+      "matchesBuild": true,
+      "comparison": "normalized text",
+      "milliseconds": 294.8
+    },
+    {
+      "path": "assets/original-pdf/chunk-01.bin",
+      "method": "HEAD",
+      "status": 200,
+      "bytes": 8388608,
+      "matchesBuild": true
+    },
+    {
+      "path": "assets/original-pdf/chunk-14.bin",
+      "method": "HEAD",
+      "status": 200,
+      "bytes": 1820485,
+      "matchesBuild": true
+    }
+  ],
+  "fullPdfDownloaded": false,
+  "browserWebVitalsMeasured": false
+}

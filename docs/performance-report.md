@@ -42,7 +42,17 @@
 
 ## 部署
 
-待正常提交推送后记录结果。现有网址保持 https://tangmengyang313-crypto.github.io/portfolio/ 。不使用 force push。
+优化代码已正常推送：ecf95d63a0fd9e76fd08d61e93f3bef24a513d32。未使用 force push。
+
+发现 Pages 同时从 main 根目录执行默认 Jekyll 发布，覆盖 Vite 构建；已将发布源由 legacy 改为 workflow，并重新运行现有部署工作流。
+
+已确认成功的部署运行：https://github.com/tangmengyang313-crypto/portfolio/actions/runs/40282025915
+
+线上地址保持 https://tangmengyang313-crypto.github.io/portfolio/ 。首页已返回正确的 Vite 构建入口 index-BkNGS1JO.js；四组项目首图、Hero WebP、campaign/09.webp、JS 和 PDF 入口/清单均返回 HTTP 200，并与本地构建匹配（文本文件规范化换行后比较，图片与脚本逐字节比较）。PDF 首末分块仅用 HEAD 检查，未下载整份文件。
+
+CDN 响应包含 Cache-Control: max-age=600。线上 FolliSense 首图实收 155,316 字节；本轮一次请求用时 921.5 ms，仅为资源请求耗时，不能等同于 LCP 或代表所有用户网络。
+
+线上资源校验明细见 performance-online-verification.json。真实浏览器滚动、手机弱网及优化后的 LCP/CLS 仍未完成复测，不宣称其具体提升比例。
 
 ## 重生成
 
